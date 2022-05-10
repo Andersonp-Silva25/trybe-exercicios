@@ -11,11 +11,17 @@
   }
   
   .baloon {
-  
+    position: absolute;
+    z-index: 4;
+    bottom: 120px;
   }
   
   .speach {
     font-size: 25px;
+    position: absolute;
+    z-index: 5;
+    bottom: 200px;
+    left: 30px;
   }
   
   .bowser {
