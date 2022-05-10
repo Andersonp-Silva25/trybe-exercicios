@@ -14,6 +14,10 @@ div:hover {
     background-color: blue;
 }
 
+.maior {
+    padding: 10px;
+}
+
 #escura {
     background-color: brown;
 }
