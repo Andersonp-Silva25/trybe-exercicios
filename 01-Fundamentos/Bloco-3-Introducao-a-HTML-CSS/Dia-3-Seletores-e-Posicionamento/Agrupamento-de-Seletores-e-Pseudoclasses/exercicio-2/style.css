@@ -14,10 +14,6 @@ div:hover {
     background-color: blue;
 }
 
-.maior {
-    padding: 10px;
-}
-
 #escura {
     background-color: brown;
 }
@@ -28,4 +24,12 @@ div:hover {
 
 h3 {
     color: chocolate;
+}
+
+.maior {
+    padding: 10px;
+}
+
+.italico {
+    font-style: italic;
 }
