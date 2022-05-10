@@ -4,6 +4,7 @@ h1, p {
 
 .center {
     text-align: center;
+    list-style: none;
 }
 
 li:hover {
