@@ -14,3 +14,9 @@ console.log("A soma de todos os valores do array é:",resultado);
 media = resultado / numbers.length;
 
 console.log(media);
+
+if(media>20){
+    console.log("Valor maior que 20");
+}else if(media<20){
+    console.log("Valor menor que 20");
+}
