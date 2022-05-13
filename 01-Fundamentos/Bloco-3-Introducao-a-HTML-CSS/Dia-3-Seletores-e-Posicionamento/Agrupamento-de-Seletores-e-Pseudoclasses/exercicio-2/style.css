@@ -1,0 +1,35 @@
+div:hover {
+    border: 2px solid green;
+}
+
+#primaria {
+    background-color: aquamarine;
+}
+
+#secundaria {
+    background-color: blueviolet;
+}
+
+#complementar {
+    background-color: blue;
+}
+
+#escura {
+    background-color: brown;
+}
+
+#clara {
+    background-color: blanchedalmond;
+}
+
+h3 {
+    color: chocolate;
+}
+
+.maior {
+    padding: 10px;
+}
+
+.italico {
+    font-style: italic;
+}

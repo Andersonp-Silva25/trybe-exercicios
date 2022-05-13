@@ -1,0 +1,16 @@
+h1, p {
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+    list-style: none;
+}
+
+li:hover {
+    background-color: blanchedalmond;
+}
+
+li:active {
+    font-size: 18px;
+}
