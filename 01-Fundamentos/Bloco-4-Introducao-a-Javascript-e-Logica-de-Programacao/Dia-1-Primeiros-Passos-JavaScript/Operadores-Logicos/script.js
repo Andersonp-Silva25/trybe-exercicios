@@ -16,3 +16,8 @@ if (currentHour >= 22){
 }
 
 console.log(message);
+
+
+// Utilizando Operador || (Ou)
+
+let weekDay = "quarta-feira";
