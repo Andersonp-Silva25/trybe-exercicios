@@ -42,3 +42,47 @@ if (salarioBruto < 0){
 
 }
 
+
+if (salarioBruto < 0){
+    console.log("Valor do Salario Bruto invalido");
+} else if(salarioBruto <= 1903.98){
+
+    console.log("Este salario está insento de imposto de renda");
+
+}else if(salarioBruto <= 2826.65){
+
+    parcelaIR = 142.80;
+    IR = ((salarioBruto * 7.5)/100) - parcelaIR;
+    salarioLiquido = salarioBruto - IR;
+    console.log("Valor da parcela: R$",parcelaIR);
+    console.log("Aliquota de 7,5% menos o valor da parcela do IR: R$",IR);
+    console.log("Valor do salario liquido: R$",salarioLiquido);
+
+}else if(salarioBruto <= 3751.05){
+
+    parcelaIR = 354.80;
+    IR = ((salarioBruto * 15)/100) - parcelaIR;
+    salarioLiquido = salarioBruto - IR;
+    console.log("Valor da parcela: R$",parcelaIR);
+    console.log("Aliquota de 15% menos o valor da parcela do IR: R$",IR);
+    console.log("Valor do salario liquido: R$",salarioLiquido);
+
+}else if(salarioBruto <= 4664.68){
+
+    parcelaIR = 142.80;
+    IR = ((salarioBruto * 22.5)/100) - parcelaIR;
+    salarioLiquido = salarioBruto - IR;
+    console.log("Valor da parcela: R$",parcelaIR);
+    console.log("Aliquota de 22,5% menos o valor da parcela do IR: R$",IR);
+    console.log("Valor do salario liquido: R$",salarioLiquido);
+
+}else{
+    
+    parcelaIR = 869,36;
+    IR = ((salarioBruto * 27.5)/100) - parcelaIR;
+    salarioLiquido = salarioBruto - IR;
+    console.log("Valor da parcela: R$",parcelaIR);
+    console.log("Aliquota de 27,5% menos o valor da parcela do IR: R$",IR);
+    console.log("Valor do salario liquido: R$",salarioLiquido);
+
+}
