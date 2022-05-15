@@ -1,4 +1,4 @@
-//Calculando o salario liquido a partir do salario bruto
+//Calculando o salario liquido a partir do salario bruto descontando o INSS e o IR
 
 let salarioBruto = 7000;
 let salarioLiquido = 0;
