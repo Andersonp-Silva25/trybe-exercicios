@@ -1,4 +1,4 @@
-//Ordenando o array em ordem decrescente
+//Ordenando o array em ordem decrescente.
 
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
