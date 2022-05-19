@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <header>
+      <h2 id="page-title">Título</h2>
+      <p id="paragraph" class="font-color">Dê uma cor para este parágrafo!</p>
+      <h4 id="subtitle">Subtítulo</h4>
+      <p id="second-paragraph" class="font-color">Segundo parágrafo!</p>
+    </header>
+    <script>
+     let paragraph = document.getElementsByClassName('font-color');
+     console.log(paragraph);
+     paragraph[1].style.color = 'red';
+
+     let subtitle = document.getElementsByTagName('h4');
+     subtitle.subtitle.style.color = 'green';
+    </script>
+  </body>
+</html>
