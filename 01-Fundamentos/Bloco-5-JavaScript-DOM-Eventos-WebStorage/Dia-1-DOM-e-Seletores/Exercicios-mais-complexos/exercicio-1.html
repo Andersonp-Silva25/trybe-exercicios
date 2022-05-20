@@ -47,13 +47,62 @@
         - document.getElementById()
         - document.getElementsByClassName()
         - document.getElementsByTagName()
- Crie uma função que mude o texto na tag <p> para uma descrição de como você se vê daqui a 2 anos. (Não gaste tempo pensando no texto e sim realizando o exercício)
- Crie uma função que mude a cor do quadrado amarelo para o verde da Trybe (rgb(76,164,109)).
- Crie uma função que mude a cor do quadrado vermelho para branco.
- Crie uma função que corrija o texto da tag <h1>.
- Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
- Crie uma função que exiba o conteúdo de todas as tags <p> no console.
+        Crie uma função que mude o texto na tag <p> para uma descrição de como você se vê daqui a 2 anos. (Não gaste tempo pensando no texto e sim realizando o exercício)
+        Crie uma função que mude a cor do quadrado amarelo para o verde da Trybe (rgb(76,164,109)).
+        Crie uma função que mude a cor do quadrado vermelho para branco.
+        Crie uma função que corrija o texto da tag <h1>.
+        Crie uma função que modifique todo o texto da tag <p> para maiúsculo.toUpperCase()
+        Crie uma função que exiba o conteúdo de todas as tags <p> no console.
         */
+
+        function description(){
+            let text = document.getElementsByTagName('p');
+            text[0].innerText = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam laboriosam voluptas consequatur ipsum distinctio quaerat dolorem perspiciatis magnam! Cumque numquam minus deleniti similique, eius quo earum rerum quibusdam fuga illo?';
+            return text;
+        }
+
+        function backgroundColor(){
+            let background = document.getElementsByClassName('main-content');
+            background[0].style.background = 'rgb(76,164,109)';
+            return background;
+        }
+
+        function backgroundCenterColor(){
+            let background = document.getElementsByClassName('center-content');
+            background[0].style.background = 'white';
+            return background;
+        }
+
+        function mainTitle(){
+            let title = document.getElementsByClassName('title');
+            title[0].innerText = 'Exercício 5.1 - JavaScript';
+            return title;
+        }
+
+        function textUpperCase(){
+            let text = document.getElementsByTagName('p');
+            for(let i = 0; i < text.length; i +=1){
+                text[i].innerText = text[i].innerText.toUpperCase();
+            }
+            return text;
+        }
+
+        function textConsole(){
+            let text = document.getElementsByTagName('p');
+            for(let i = 0; i < text.length; i += 1){
+                let screen = text[i].innerText;
+                console.log(screen);
+            }
+            return;
+        }
+
+        description();
+        backgroundColor();
+        backgroundCenterColor();
+        mainTitle();
+        textUpperCase();
+        textConsole();
+
     </script>
   </body>
 </html>
