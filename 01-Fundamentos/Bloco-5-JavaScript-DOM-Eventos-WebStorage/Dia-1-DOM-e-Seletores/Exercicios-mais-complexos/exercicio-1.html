@@ -55,6 +55,12 @@
         Crie uma função que exiba o conteúdo de todas as tags <p> no console.
         */
 
+        function description(){
+            let text = document.getElementsByTagName('p');
+            text[0].innerText = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam laboriosam voluptas consequatur ipsum distinctio quaerat dolorem perspiciatis magnam! Cumque numquam minus deleniti similique, eius quo earum rerum quibusdam fuga illo?';
+            return text;
+        }
+
         function backgroundColor(){
             let background = document.getElementsByClassName('main-content');
             background[0].style.background = 'rgb(76,164,109)';
@@ -90,6 +96,7 @@
             return;
         }
 
+        description();
         backgroundColor();
         backgroundCenterColor();
         mainTitle();
