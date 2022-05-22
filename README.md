@@ -34,7 +34,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda 
 - [x] 4-2: _JavaScript - Array e loop For_
 - [x] 4-3: _JavaScript - Lógica de Programação e Algoritmos_
 - [x] 4-4: _JavaScript - Objetos e funções_
-- [x] 4-5: _[Projeto JavaScript](https://github.com/Andersonp-Silva25/Andersonp-Silva25.github.io/tree/master/projetos/playground-functions)_
+- [x] 4-5: _[Projeto - JavaScript](https://github.com/Andersonp-Silva25/Andersonp-Silva25.github.io/tree/master/projetos/playground-functions)_
 
 ##### Bloco 05: JavaScript: DOM, Eventos e Web Storage  :hourglass_flowing_sand:
 
@@ -42,5 +42,5 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda 
 - [x] 5-2: _JavaScript - Trabalhando com elementos_
 - [ ] 5-3: _JavaScript - Eventos_
 - [ ] 5-4: _JavaScript - Web Storage_
-- [ ] 5-5: _Projeto JavaScript_
+- [ ] 5-5: _Projeto - JavaScript_
 
