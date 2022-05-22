@@ -89,6 +89,69 @@
         createImg.src = 'https://picsum.photos/200';
         getSectionLeft.appendChild(createImg);
 
+        let createUl = createNewElement('ul');
+        for (let i = 0; i < 10; i += 1) {
+          let value = '';
+          let li = createNewElement('li');;
+          switch (i) {
+            case 0:
+              value = 'Um'; 
+              li.innerText = value;
+              createUl.appendChild(li);
+              break;
+            case 1:
+              value = 'Dois'; 
+              li.innerText = value;
+              createUl.appendChild(li);
+              break;
+            case 2:
+              value = 'Três'; 
+              li.innerText = value;
+              createUl.appendChild(li);
+              break;
+            case 3:
+              value = 'Quatro'; 
+              li.innerText = value;
+              createUl.appendChild(li);
+              break;
+            case 4:
+              value = 'Cinco'; 
+              li.innerText = value;
+              createUl.appendChild(li);
+              break;
+            case 5:
+              value = 'Seis'; 
+              li.innerText = value;
+              createUl.appendChild(li);
+              break;
+            case 6:
+              value = 'Sete'; 
+              li.innerText = value;
+              createUl.appendChild(li);
+              break;
+            case 7:
+              value = 'Oito'; 
+              li.innerText = value;
+              createUl.appendChild(li);
+              break;
+            case 8:
+              value = 'Nove'; 
+              li.innerText = value;
+              createUl.appendChild(li);
+              break;
+            case 9:
+              value = 'Dez'; 
+              li.innerText = value;
+              createUl.appendChild(li);
+              break;
+          }
+        }
+        
+        let getSectionRight = document.querySelector('.right-content');
+        
+        getSectionRight.appendChild(createUl);
+
+
     </script>
   </body>
 </html>
