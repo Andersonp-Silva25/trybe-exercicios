@@ -59,17 +59,26 @@
     <script>
         let getBody = document.getElementsByTagName('body');
         
-        let createH1 = document.createElement('h1');
+        function createNewElement (tagName, className){
+          let create = document.createElement(tagName);
+          create.className = className;
+          return create;
+        }
+
+        let createH1 = createNewElement('h1');
         createH1.innerText = 'Exercício 5.2 - JavaScript DOM';
         getBody[0].appendChild(createH1);
 
-        let createMain = document.createElement('main');
-        createMain.className = 'main-content';
-        getBody[0].appendChild(createMain);
+        getBody[0].appendChild(createNewElement('main', 'main-content'));
 
-        let createSection = document.createElement('section');
-        createSection.className = 'center-content';
-        createMain.appendChild(createSection);
+        let getMain = document.querySelector('.main-content');
+      
+        getMain.appendChild(createNewElement('section', 'center-content'));
+
+        let getSectionCenter = document.querySelector('.center-content');
+    
+        getSectionCenter.appendChild(createNewElement('p'));
+
     </script>
   </body>
 </html>
