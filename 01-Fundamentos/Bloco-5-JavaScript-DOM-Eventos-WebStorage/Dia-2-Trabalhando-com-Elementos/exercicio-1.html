@@ -90,10 +90,10 @@
         createImg.src = 'https://picsum.photos/200';
         getSectionLeft.appendChild(createImg);
 
-        let createUl = createNewElement('ul');
+        let createUl = createNewElement('ul', 'list');
         for (let i = 0; i < 10; i += 1) {
           let value = '';
-          let li = createNewElement('li');;
+          let li = createNewElement('li', 'list-item');;
           switch (i) {
             case 0:
               value = 'Um'; 
@@ -159,6 +159,17 @@
         getMain.removeChild(getSectionLeft);
 
         getSectionRight.setAttribute('margin-right', 'auto');
+
+        let getUl = document.querySelector('.list');
+        let getList = document.querySelectorAll('.list-item');
+        
+        for (let i = 0; i < getList.length; i += 1) {
+          let elementList = getList[i];
+          
+          if (elementList.innerText.includes('Nove') || elementList.innerText.includes('Dez')){
+            getUl.removeChild(elementList);
+          }
+        }
 
     </script>
   </body>
