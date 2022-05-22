@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+        let getBody = document.getElementsByTagName('body');
+        
+        function createNewElement (tagName, className){
+          let create = document.createElement(tagName);
+          create.className = className;
+          return create;
+        }
+
+        let createH1 = createNewElement('h1');
+        createH1.innerText = 'Exercício 5.2 - JavaScript DOM';
+        createH1.className = 'title';
+        getBody[0].appendChild(createH1);
+
+        getBody[0].appendChild(createNewElement('main', 'main-content'));
+
+        let getMain = document.querySelector('.main-content');
+      
+        getMain.appendChild(createNewElement('section', 'center-content'));
+
+        let getSectionCenter = document.querySelector('.center-content');
+    
+        getSectionCenter.appendChild(createNewElement('p'));
+
+        getMain.appendChild(createNewElement('section', 'left-content'));
+
+        getMain.appendChild(createNewElement('section', 'right-content'));
+
+        let getSectionLeft = document.querySelector('.left-content');
+
+        let createImg = createNewElement('img', 'small-image');
+        createImg.src = 'https://picsum.photos/200';
+        getSectionLeft.appendChild(createImg);
+
+        let createUl = createNewElement('ul', 'list');
+        for (let i = 0; i < 10; i += 1) {
+          let value = '';
+          let li = createNewElement('li', 'list-item');;
+          switch (i) {
+            case 0:
+              value = 'Um'; 
+              li.innerText = value;
+              createUl.appendChild(li);
+              break;
+            case 1:
+              value = 'Dois'; 
+              li.innerText = value;
+              createUl.appendChild(li);
+              break;
+            case 2:
+              value = 'Três'; 
+              li.innerText = value;
+              createUl.appendChild(li);
+              break;
+            case 3:
+              value = 'Quatro'; 
+              li.innerText = value;
+              createUl.appendChild(li);
+              break;
+            case 4:
+              value = 'Cinco'; 
+              li.innerText = value;
+              createUl.appendChild(li);
+              break;
+            case 5:
+              value = 'Seis'; 
+              li.innerText = value;
+              createUl.appendChild(li);
+              break;
+            case 6:
+              value = 'Sete'; 
+              li.innerText = value;
+              createUl.appendChild(li);
+              break;
+            case 7:
+              value = 'Oito'; 
+              li.innerText = value;
+              createUl.appendChild(li);
+              break;
+            case 8:
+              value = 'Nove'; 
+              li.innerText = value;
+              createUl.appendChild(li);
+              break;
+            case 9:
+              value = 'Dez'; 
+              li.innerText = value;
+              createUl.appendChild(li);
+              break;
+          }
+        }
+        
+        let getSectionRight = document.querySelector('.right-content');
+        
+        getSectionRight.appendChild(createUl);
+
+        for (let i = 0; i < 3; i += 1){
+          getMain.appendChild(createNewElement('h3', 'description'));
+        }
+
+        getMain.removeChild(getSectionLeft);
+
+        getSectionRight.setAttribute('margin-right', 'auto');
+
+        let getUl = document.querySelector('.list');
+        let getList = document.querySelectorAll('.list-item');
+        
+        for (let i = 0; i < getList.length; i += 1) {
+          let elementList = getList[i];
+          
+          if (elementList.innerText.includes('Nove') || elementList.innerText.includes('Dez')){
+            getUl.removeChild(elementList);
+          }
+        }
+
+    </script>
+  </body>
+</html>
