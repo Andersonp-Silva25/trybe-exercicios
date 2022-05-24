@@ -40,6 +40,13 @@ input.addEventListener('keyup', changeText);
 // redirecione para alguma página;
 // 4.1. Que tal redirecionar para seu portfólio?
 
+function dbClickTitle(){
+ window.location.href = 'https://andersonp-silva25.github.io/';
+ return;
+}
+
+myWebpage.addEventListener('dblclick', dbClickTitle);
+
 // 5. Crie uma função que, ao passar o mouse sobre 'Meu top 3 do Spotrybefy', altere
 // a cor do mesmo;
 
