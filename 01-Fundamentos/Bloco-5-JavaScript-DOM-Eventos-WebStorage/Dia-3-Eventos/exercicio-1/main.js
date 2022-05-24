@@ -43,6 +43,19 @@ input.addEventListener('keyup', changeText);
 // 5. Crie uma função que, ao passar o mouse sobre 'Meu top 3 do Spotrybefy', altere
 // a cor do mesmo;
 
+function changeColorTextOver(){
+  let title = document.querySelector('#my-spotrybefy');
+  title.style.color = 'red';
+  return title;
+}
+function changeColorTextOut(){
+  let title = document.querySelector('#my-spotrybefy');
+  title.style.color = 'white';
+  return title;
+}
+myWebpage.addEventListener('mouseover', changeColorTextOver);
+myWebpage.addEventListener('mouseout', changeColorTextOut);
+
 // Segue abaixo um exemplo do uso de event.target:
 
 // function resetText(event) {
