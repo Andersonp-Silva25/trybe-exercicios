@@ -36,11 +36,21 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda 
 - [x] 4-4: _JavaScript - Objetos e funções_
 - [x] 4-5: _[Projeto - JavaScript](https://github.com/Andersonp-Silva25/Andersonp-Silva25.github.io/tree/master/projetos/playground-functions)_
 
-##### Bloco 05: JavaScript: DOM, Eventos e Web Storage  :hourglass_flowing_sand:
+##### Bloco 05: JavaScript: DOM, Eventos e Web Storage  :white_check_mark:
 
 - [x] 5-1: _JavaScript - DOM e Seletores_
 - [x] 5-2: _JavaScript - Trabalhando com elementos_
-- [ ] 5-3: _JavaScript - Eventos_
-- [ ] 5-4: _JavaScript - Web Storage_
-- [ ] 5-5: _Projeto - JavaScript_
+- [x] 5-3: _JavaScript - Eventos_
+- [x] 5-4: _JavaScript - Web Storage_
+- [x] 5-5: _[Projeto - JavaScript](https://andersonp-silva25.github.io/projetos/pixel-art/)_
+
+##### Bloco 06: HTML e CSS: Forms, Flexbox e Responsivo  :hourglass_flowing_sand:
+
+- [x] 6-1: _HTML & CSS - Forms_
+- [x] 6-2: _Bibliotecas JavaScript e Frameworks CSS_
+- [x] 6-3: _CSS Flexbox - Part 1_
+- [x] 6-4: _CSS Flexbox - Part 2_
+- [ ] 6-5: _CSS Responsivo - Mobile First_
+- [ ] 6-6: _Projeto - HTML & CSS_
+
 
