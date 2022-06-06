@@ -3,6 +3,9 @@ const INPUT_TEXT = document.querySelector("#input-text");
 const INPUT_CHECKBOX = document.querySelector("#input-checkbox");
 const HREF_LINK = document.querySelector("#href");
 
-HREF_LINK.addEventListener('click', function(event){
+function prevent(event){
   event.preventDefault();
-})
+}
+
+HREF_LINK.addEventListener('click', prevent);
+INPUT_CHECKBOX.addEventListener('click', prevent);
