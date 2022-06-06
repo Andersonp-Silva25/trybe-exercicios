@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <header></header>
+  <main>
+    <form action="" method="get">
+      <fieldset>
+        <div>
+          <label for="nome">Nome Completo:</label>
+          <input type="text" min="10" max="40" id="nome" name="nome">
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" min="10" max="50" id="email" name="email">
+        </div>
+        <div>
+          <p>Destino Preferido</p>
+          <input type="radio" name="destino" id="cidade" value="cidade">
+          <label for="cidade">Cidade</label>
+          <input type="radio" name="destino" id="campo" value="campo">
+          <label for="campo">Campo</label>
+          <input type="radio" name="destino" id="praia" value="praia">
+          <label for="praia">Praia</label>
+          <input type="radio" name="destino" id="montanhas" value="montanhas">
+          <label for="montanhas">Montanhas</label>
+        </div>
+        <div>
+          <p>Espaço para digitar a resposta:</p>
+          <textarea name="resumo" id="resumo" maxlength="500" cols="30" rows="10" placeholder="Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip"></textarea>
+        </div>
+        <div>
+          <label for="data-viagem">Data: </label>
+          <input type="date" id="data-viagem">
+        </div>
+        <div>
+          <label for="oportunidades">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</label>
+          <input type="checkbox" name="oportunidades" id="oportunidades">
+          <label for="imagens-ferias">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</label>
+          <input type="checkbox" name="imagens-ferias" id="imagens-ferias">
+        </div>
+      </fieldset>
+      <button type="submit">Enviar</button>
+      <button type="reset">Apager</button>
+    </form>
+  </main>
+</body>
+</html>
