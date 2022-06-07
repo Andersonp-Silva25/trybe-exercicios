@@ -62,3 +62,19 @@
   box-shadow: #474A51 1px 1px;
   margin: 5px;
 }
+
+#footer {
+  display: flex;
+  justify-content: center;
+}
+
+#div {
+  display: flex;
+  justify-content: center;
+  margin: 15px;
+}
+
+#div hr {
+  width: 20%;
+  border: #474A51 1px solid;
+}
