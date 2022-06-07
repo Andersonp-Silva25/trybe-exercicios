@@ -24,3 +24,10 @@
   justify-content: space-around;
   align-items: center;
 }
+
+#description {
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  align-items: center;
+}
